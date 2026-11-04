@@ -45,8 +45,8 @@ main.container {
 }
 
 .site-header {
-  padding: 88px 0 72px;
-  color: #dce7f2;
+  padding: 60px 0 52px;
+  color: #e6f0f9;
   background: var(--deep);
 }
 
@@ -176,7 +176,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  width: 280px;
   aspect-ratio: 4 / 3;
   background: var(--white);
   border: 1px dashed var(--line);
@@ -262,7 +262,7 @@ h1 {
 .project-list {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(260px, 320px);
+  grid-auto-columns: minmax(320px, 400px);
   gap: 24px;
   padding: 4px 2px 16px;
   overflow-x: auto;
@@ -374,16 +374,17 @@ a:hover {
 
 @media (max-width: 600px) {
   .site-header {
-    padding: 62px 0 52px;
+    padding: 40px 0 36px;
   }
 
   .header-inner {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 20px;
   }
 
   .header-photo {
     width: 100%;
+    aspect-ratio: 2 / 1;
   }
 
   .container {
@@ -409,7 +410,7 @@ a:hover {
   }
 
   .project-list {
-    grid-auto-columns: minmax(240px, 84vw);
+    grid-auto-columns: 100%;
   }
 }
 /* Team section */
